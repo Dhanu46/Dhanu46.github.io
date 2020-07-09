@@ -8,7 +8,7 @@ Promise.all([
 ]).then(startVideo)
 
 function startVideo() {
- navigator.mediaDevices.getUserMedia({ video: true, audio: true }).then(
+ navigator.mediaDevices.getUserMedia({ video: true}).then(
     stream => video.srcObject = stream,
     err => console.error(err)
   )
